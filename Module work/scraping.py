@@ -1,5 +1,6 @@
 # Import Splinter, BeautifulSoup, and Pandas
 from splinter import Browser
+from selenium import webdriver
 from bs4 import BeautifulSoup as soup
 import pandas as pd
 import datetime as dt
@@ -8,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # initialize browser, create data dictionary, end webdriver, return scraped data
 def scrape_all():
     # Initiate headless driver for deployment
-    executable_path = {'executable_path': ChromeDriverManager().install()}
+    executable_path = {'executable_path': ChromeDriverManager(version = "98.0.4758.102").install()}
     # headless true means we won't see it in action
     browser = Browser('chrome', **executable_path, headless=True)
     # set our news title and paragraph variables
