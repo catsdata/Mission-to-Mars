@@ -9,6 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # initialize browser, create data dictionary, end webdriver, return scraped data
 def scrape_all():
     # Initiate headless driver for deployment
+    # Had to enter in version number of the driver due to driver updating before chrome version
     executable_path = {'executable_path': ChromeDriverManager(version = "98.0.4758.102").install()}
     # headless true means we won't see it in action
     browser = Browser('chrome', **executable_path, headless=True)
