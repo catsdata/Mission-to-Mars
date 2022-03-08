@@ -39,7 +39,7 @@
     - The index.html file contains code that will display the full-resolution image URL and title for each hemisphere image (10 pt)
     - After the scraping has been completed, the web app contains all the information from this module and the full-resolution images and titles for the four hemisphere images (10 pt)
 
-![screencap](https://github.com/catsdata/Mission-to-Mars/blob/main/primary.PNG)
+![screencap](https://github.com/catsdata/Mission-to-Mars/blob/main/primary.png)
 
 - Deliverable 3: Add Bootstrap 3 Components
     - The webpage is mobile-responsive (10 pt)
