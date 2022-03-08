@@ -99,7 +99,7 @@ def mars_facts():
     df.set_index('Description', inplace=True)
 
     # Convert dataframe into HTML format, add bootstrap
-    return df.to_html()
+    return df.to_html(classes="table table-striped table-dark")
 
 # 3. create a function that will scrape the hemisphere data by using your code from the Mission_to_Mars_Challenge.py file
 def hemis(browser):
