@@ -45,6 +45,8 @@
     - The webpage is mobile-responsive (10 pt)
     - Two additional Bootstrap 3 components are used to style the webpage (10 pt)
 
+![bootstrap](https://github.com/catsdata/Mission-to-Mars/blob/main/bootstrap_changes.png)
+
 ## Summary
 
 Upload the following to your 'Mission-to-Mars' GitHub repository:
