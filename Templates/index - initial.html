@@ -12,37 +12,30 @@
     />
   </head>
   <body>
-    <div class="container" style="background-color: #beddf1">
+    <div class="container">
       <!-- Add Jumbotron to Header -->
-      <!-- ADDED BACKGROUND COLOR TO HEADER -->
-      <div class="jumbotron text-center" style="background-color: #74bef0">
-        <!-- SET THE HEADER IN BOLD -->
-        <h1><strong>Mission to Mars</strong></h1>
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <!-- REDUCED SIZE AND CHANGED COLOR OF THE BUTTON -->
         <p></p>
-        <p><a class="btn btn-secondary btn-md" style="background-color: #beddf1" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
       </div>
       <!-- Add section for Mars News -->
       <div class="row" id="mars-news">
-        <!-- UPDATED FOR MOBILE -->
-        <div class="col-md-12 col-xs-12">
+        <div class="col-md-12">
           <div class="media">
             <div class="media-body">
-              <!-- CENTERED LATEST NEWS TEXT -->
-              <h2 style="text-align: center">Latest Mars News</h2>
-              <h4 style="text-align: center" class="media-heading">{{ mars.news_title }}</h4>
-              <p style="text-align: center"> {{ mars.news_paragraph }}</p>
+              <h2>Latest Mars News</h2>
+              <h4 class="media-heading">{{ mars.news_title }}</h4>
+              <p> {{ mars.news_paragraph }}</p>
             </div>
           </div>
         </div>
       </div>
       <!-- Section for Featured Image and Facts table -->
       <div class="row" id="mars-featured-image">
-        <!-- UPDATED FOR MOBILE -->
-        <div class="col-md-8 col-xs-8">
-          <!-- REDUCED TEXT SIZE OF HEADER -->
-          <h3>Featured Mars Image</h3>
+        <div class="col-md-8">
+          <h5>Featured Mars Image</h5>
           <img
             src="{{ mars.featured_image }}"
             class="img-responsive"
@@ -52,8 +45,7 @@
         <div class="col-md-4">
           <!-- Mars Facts -->
           <div class="row" id="mars-facts">
-            <!-- MATCHED HEADER TEXT SIZE TO FEATURED IMAGE -->
-            <h3>Mars Facts</h3>
+            <h4>Mars Facts</h4>
             {{ mars.facts | safe }}
           </div>
         </div>
@@ -66,8 +58,7 @@
        </div>
       
        {% for hemisphere in mars.hemisphere_image_urls %}
-       <!-- UPDATED FOR MOBILE PHONES -->
-       <div class="col-md-6 col-xs-6">
+       <div class="col-md-6">
            <div class="thumbnail">
              <img 
                src="{{hemisphere.img_url | default('static/images/error.png', true)}}" 
